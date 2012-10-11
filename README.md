@@ -25,13 +25,15 @@ Before trying to fix the blob-storage code in Zope, it seemed a nice way to try 
 So the premise is simple: for each blob-file, calculate a sha1 hash, and build lists of filenames that share the same hash value, and replace all the duplicate files with hard-links.
 
 Whipping up a quick python script shows some really significant saving:
+
+```
 Current usage
 14625	var/blobstorage
 scanning... done
 optimizing... done
 Optimized usage
 2395	var/blobstorage
-
+```
 
 Those numbers are actually MB - output from ‘du -ms’. Pretty nice savings, right?
 
