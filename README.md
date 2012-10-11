@@ -42,6 +42,5 @@ Feel free to try it. Just make sure you only run this on you development sandbox
 improve copy and move actions
 -----------------------------
 
-The ultimate goal at this stage would be to fix ZODB/src/ZODB/blob.py to support updating the blobs, without also updating all the linked files. Once that is in place blobstorage would not only take significantly less space, but moving and copying large amounts of data in you Plone site would become much, much faster since no blobs would have to be written onto the filesystem; only links would have to be added.
+The ultimate goal at this stage would be to fix ZODB/src/ZODB/blob.py to support updating the blobs, without also updating all the linked files. Once that is in place blobstorage would not only take significantly less space, but moving and copying large amounts of data in your Plone site would become much, much faster since no blobs would have to be written onto the filesystem; only links would have to be added.
 
----
