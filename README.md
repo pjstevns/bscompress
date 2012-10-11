@@ -1,0 +1,4 @@
+bscompress
+==========
+
+Experimental Blobstorage Compressor
