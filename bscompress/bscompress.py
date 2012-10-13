@@ -28,7 +28,6 @@ def scanner(base):
     for root, dirs, files in os.walk(base):
         files = [x for x in files if x.endswith('.blob')]
         for file in files:
-            sys.stdout.write('.')
             oidpath = os.path.join(root, file)
             data = open(oidpath, 'r').read()
             hash = hashlib.sha1(data).hexdigest()
